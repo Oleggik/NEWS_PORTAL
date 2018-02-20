@@ -1,0 +1,128 @@
+﻿<div class="container text-center">
+
+    <div *ngIf="!preview">
+        <h2 class="text-center">Edit news</h2>
+        <div class="row" style="margin-top: 20px;">
+            <div class="container">
+                <div class="col-lg-4">
+                    <input #inputTitle="ngModel" class="form-control" type="text" name="Title"
+                           [(ngModel)]="selectedNews.Title"
+                           placeholder="News title">
+
+                    <ul *ngFor="let errors of validateNews.errors.errorsForTitle">
+                        <li *ngFor="let item of errors.ErrorsMessage">{{item}}</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4">
+                    <form #myForm="ngForm">
+                        <my-date-picker name="CreatedDate"
+                                        placeholder="Choose date"
+                                        [options]="myDatePickerOptions"
+                                        [(ngModel)]="selectedNews.CreatedDate">
+                        </my-date-picker>
+                    </form>
+
+                    <ul *ngFor="let errors of validateNews.errors.errorsForDate">
+                        <li *ngFor="let item of errors.ErrorsMessage">{{item}}</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <ng-select style="position: relative; z-index: 1000;"
+                               [items]="categories"
+                               [multiple]="false"
+                               [clearable]="false"
+                               bindLabel="Name"
+                               bindValue="Id"
+                               placeholder="Select Category"
+                               [(ngModel)]="selectedNews.CategoryId">
+                    </ng-select>
+
+                    <ul *ngFor="let errors of validateNews.errors.errorsForCategory">
+                        <li *ngFor="let item of errors.ErrorsMessage">{{item}}</li>
+                    </ul>
+                </div>
+
+                <ui-switch class="col-lg-1" [(ngModel)]="selectedNews.Published"></ui-switch>
+            </div>
+        </div>
+
+        <!-- input description -->
+        <div style="margin-top: 20px;">
+            <input #inputTitle="ngModel" class="form-control" type="text" name="Description"
+                   [(ngModel)]="selectedNews.Description"
+                   placeholder="News description"
+                   (ngModelChange)="validateNews.validateDescription(selectedNews.Description)">
+
+            <ul *ngFor="let errors of validateNews.errors.errorsForDescription">
+                <li *ngFor="let item of errors.ErrorsMessage">{{item}}</li>
+            </ul>
+        </div>
+
+        <div>
+            <div style="min-width: 100%; min-height: 70%">
+                <div type="text" name="Body" style="margin-top: 20px;"
+                     [froalaEditor]="optionsFroalaEditor"
+                     [(froalaModel)]="selectedNews.Body">
+                </div>
+            </div>
+
+            <ul *ngFor="let errors of validateNews.errors.errorsForBody">
+                <li *ngFor="let item of errors.ErrorsMessage">{{item}}</li>
+            </ul>
+        </div>
+
+        <div style="margin-top: 20px;">
+            <div style="margin-top: 20px;">
+                <ul *ngFor="let errors of validateNews.errors.errorCreatedNews">
+                    <li *ngFor="let item of errors.ErrorsMessage">{{item}}</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="margin-top: 20px;" *ngIf="startEditing">Loading...</div>
+
+        <div class="row" style="margin-top: 20px;">
+            <div class="container">
+                <div class="col-lg-4">
+                    <button style="margin-top: 20px;" class="btn btn-success btn-block" (click)="previewStart(selectedNews)">Preview</button>
+                </div>
+                <div class="col-lg-4">
+                    <button style="margin-top: 20px;" class="btn btn-primary btn-block" (click)="editNews(selectedNews)">Save</button>
+                </div>
+                <div class="col-lg-4">
+                    <button style="margin-top: 20px;" class="btn btn-success btn-block" (click)="closeEditing()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="preview">
+        <div class="container">
+            <div class="text-center">
+                <div class="text-primary" style="font-size:20px; font-style:italic; font-weight:bold">
+                    {{news.Title}}
+                </div>
+                <div class="text-success">
+                    Category: <i>{{news.CategoryName}}</i>
+                </div>
+                <div class="text-muted">
+                    Published date: {{news.CreatedDate}}
+                </div>
+                <div class="text-muted">
+                    Author: {{news.UserName}}
+                </div>
+                <div class="text-muted">
+                    Description: {{news.Description}}
+                </div>
+            </div>
+
+            <div id="div" style="margin-top:50px;" [innerHtml]="news.Body"></div>
+        </div>
+        
+        <div class="col-lg-offset-8">
+            <button style="margin-top: 20px;" class="btn btn-success btn-block" (click)="closePreview()">Close preview</button>
+        </div>
+    </div>
+</div>

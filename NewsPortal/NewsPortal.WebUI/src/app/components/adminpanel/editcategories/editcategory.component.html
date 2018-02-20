@@ -1,0 +1,35 @@
+﻿<div class="container text-center">
+
+    <h2 class="text-center">Editing category</h2>
+
+    <div class="row" style="margin-top: 20px;">
+        <div class="container">
+            <div class="col-lg-10">
+                <input #inCategory="ngModel" class="form-control" required type="text" name="inputCategory" [(ngModel)]="selectedCategory.Name" placeholder="New Category">
+            </div>
+            <ui-switch class="col-lg-2" [(ngModel)]="selectedCategory.Active"></ui-switch>
+        </div>
+    </div>
+
+    <div style="margin-top: 20px;">
+        <ul>
+            <li [hidden]="inCategory.valid">Category name require</li>
+        </ul>
+        <ul *ngFor="let errors of errorCreatedCategory">
+            <li *ngFor="let item of errors.ErrorsMessage">{{item}}</li>
+        </ul>
+    </div>
+
+    <div style="margin-top: 20px;" *ngIf="startEditing">Loading...</div>
+
+    <div class="row" style="margin-top: 20px;">
+        <div class="container">
+            <div class="col-lg-6">
+                <button [disabled]="inCategory.invalid" style="margin-top: 20px;" class="btn btn-primary btn-block" (click)="editCategory(selectedCategory)">Save</button>
+            </div>
+            <div class="col-lg-6">
+                <button style="margin-top: 20px;" class="btn btn-danger btn-block" (click)="closeEditing()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,115 @@
+﻿2018-02-05 02:01:40.307 INFO  DefaultFactory Logging to 'C:\Users\ehtra\Documents\NewsPortal\NewsPortal\NewsPortal.Web\App_Data\' with level Info
+2018-02-05 02:02:19.961 INFO  NServiceBus.LicenseManager No valid license could be found, falling back to trial license with start date '04.02.2018'
+
+2018-02-05 02:02:20.062 INFO  NServiceBus.PerformanceMonitorUsersInstaller Did not attempt to add user 'DESKTOP-N273TTV\ehtra' to group 'Пользователи системного монитора' since the process is not running with elevated privileges. Processing will continue. To manually perform this action, run the following command from an admin console:
+net localgroup "Пользователи системного монитора" "DESKTOP-N273TTV\ehtra" /add
+2018-02-05 02:02:20.238 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs pulled from the input queue /sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 02:02:20.258 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 02:02:20.277 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs failures / sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 02:02:47.097 INFO  NServiceBus.Unicast.UnicastBus Initiating shutdown.
+2018-02-05 02:02:47.223 INFO  NServiceBus.Unicast.UnicastBus Shutdown complete.
+2018-02-05 02:06:03.157 INFO  DefaultFactory Logging to 'C:\Users\ehtra\Documents\NewsPortal\NewsPortal\NewsPortal.Web\App_Data\' with level Info
+2018-02-05 02:06:21.086 INFO  NServiceBus.LicenseManager No valid license could be found, falling back to trial license with start date '04.02.2018'
+
+2018-02-05 02:06:21.195 INFO  NServiceBus.PerformanceMonitorUsersInstaller Did not attempt to add user 'DESKTOP-N273TTV\ehtra' to group 'Пользователи системного монитора' since the process is not running with elevated privileges. Processing will continue. To manually perform this action, run the following command from an admin console:
+net localgroup "Пользователи системного монитора" "DESKTOP-N273TTV\ehtra" /add
+2018-02-05 02:06:21.340 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs pulled from the input queue /sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 02:06:21.359 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 02:06:21.388 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs failures / sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 02:06:22.011 INFO  NServiceBus.Unicast.UnicastBus Initiating shutdown.
+2018-02-05 02:06:22.090 INFO  NServiceBus.Unicast.UnicastBus Shutdown complete.
+2018-02-05 08:39:04.658 INFO  DefaultFactory Logging to 'D:\Work Task\NewsPortal\NewsPortal\NewsPortal.Web\App_Data\' with level Info
+2018-02-05 08:39:04.877 INFO  NServiceBus.LicenseManager No valid license could be found, falling back to trial license with start date '05.02.2018'
+
+2018-02-05 08:39:04.939 INFO  NServiceBus.PerformanceMonitorUsersInstaller Did not attempt to add user 'ITRANSITION\e.raltsevich' to group 'Performance Monitor Users' since the process is not running with elevated privileges. Processing will continue. To manually perform this action, run the following command from an admin console:
+net localgroup "Performance Monitor Users" "ITRANSITION\e.raltsevich" /add
+2018-02-05 08:39:05.018 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs pulled from the input queue /sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 08:39:05.018 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 08:39:05.018 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs failures / sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 08:39:05.299 INFO  NServiceBus.Unicast.UnicastBus Initiating shutdown.
+2018-02-05 08:39:05.315 INFO  NServiceBus.Unicast.UnicastBus Shutdown complete.
+2018-02-05 08:39:26.373 INFO  NServiceBus.LicenseManager No valid license could be found, falling back to trial license with start date '05.02.2018'
+
+2018-02-05 08:39:26.373 INFO  NServiceBus.PerformanceMonitorUsersInstaller Did not attempt to add user 'ITRANSITION\e.raltsevich' to group 'Performance Monitor Users' since the process is not running with elevated privileges. Processing will continue. To manually perform this action, run the following command from an admin console:
+net localgroup "Performance Monitor Users" "ITRANSITION\e.raltsevich" /add
+2018-02-05 08:39:26.389 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs pulled from the input queue /sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 08:39:26.405 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 08:39:26.405 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs failures / sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 08:39:26.420 INFO  NServiceBus.Unicast.UnicastBus Initiating shutdown.
+2018-02-05 08:39:26.436 INFO  NServiceBus.Unicast.UnicastBus Shutdown complete.
+2018-02-05 09:20:22.086 INFO  DefaultFactory Logging to 'D:\Work Task\NewsPortal\NewsPortal\NewsPortal.Web\App_Data\' with level Info
+2018-02-05 09:20:22.242 INFO  NServiceBus.LicenseManager No valid license could be found, falling back to trial license with start date '05.02.2018'
+
+2018-02-05 09:20:22.284 INFO  NServiceBus.PerformanceMonitorUsersInstaller Did not attempt to add user 'ITRANSITION\e.raltsevich' to group 'Performance Monitor Users' since the process is not running with elevated privileges. Processing will continue. To manually perform this action, run the following command from an admin console:
+net localgroup "Performance Monitor Users" "ITRANSITION\e.raltsevich" /add
+2018-02-05 09:20:22.346 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs pulled from the input queue /sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 09:20:22.351 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 09:20:22.355 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs failures / sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 09:20:22.633 INFO  NServiceBus.Unicast.UnicastBus Initiating shutdown.
+2018-02-05 09:20:22.659 INFO  NServiceBus.Unicast.UnicastBus Shutdown complete.
+2018-02-05 11:31:38.351 INFO  DefaultFactory Logging to 'D:\Work Task\NewsPortal\NewsPortal\NewsPortal.Web\App_Data\' with level Info
+2018-02-05 11:31:38.570 INFO  NServiceBus.LicenseManager No valid license could be found, falling back to trial license with start date '05.02.2018'
+
+2018-02-05 11:31:38.625 INFO  NServiceBus.PerformanceMonitorUsersInstaller Did not attempt to add user 'ITRANSITION\e.raltsevich' to group 'Performance Monitor Users' since the process is not running with elevated privileges. Processing will continue. To manually perform this action, run the following command from an admin console:
+net localgroup "Performance Monitor Users" "ITRANSITION\e.raltsevich" /add
+2018-02-05 11:31:38.691 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs pulled from the input queue /sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 11:31:38.695 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 11:31:38.700 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs failures / sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 11:31:38.942 INFO  NServiceBus.Unicast.UnicastBus Initiating shutdown.
+2018-02-05 11:31:38.971 INFO  NServiceBus.Unicast.UnicastBus Shutdown complete.
+2018-02-05 11:37:43.203 INFO  NServiceBus.LicenseManager No valid license could be found, falling back to trial license with start date '05.02.2018'
+
+2018-02-05 11:37:43.232 INFO  NServiceBus.PerformanceMonitorUsersInstaller Did not attempt to add user 'ITRANSITION\e.raltsevich' to group 'Performance Monitor Users' since the process is not running with elevated privileges. Processing will continue. To manually perform this action, run the following command from an admin console:
+net localgroup "Performance Monitor Users" "ITRANSITION\e.raltsevich" /add
+2018-02-05 11:37:43.256 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs pulled from the input queue /sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 11:37:43.261 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 11:37:43.275 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs failures / sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 11:37:43.293 INFO  NServiceBus.Unicast.UnicastBus Initiating shutdown.
+2018-02-05 11:37:43.305 INFO  NServiceBus.Unicast.UnicastBus Shutdown complete.
+2018-02-05 11:38:43.955 INFO  NServiceBus.LicenseManager No valid license could be found, falling back to trial license with start date '05.02.2018'
+
+2018-02-05 11:38:43.960 INFO  NServiceBus.PerformanceMonitorUsersInstaller Did not attempt to add user 'ITRANSITION\e.raltsevich' to group 'Performance Monitor Users' since the process is not running with elevated privileges. Processing will continue. To manually perform this action, run the following command from an admin console:
+net localgroup "Performance Monitor Users" "ITRANSITION\e.raltsevich" /add
+2018-02-05 11:38:43.999 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs pulled from the input queue /sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 11:38:44.004 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 11:38:44.023 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs failures / sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 11:38:44.043 INFO  NServiceBus.Unicast.UnicastBus Initiating shutdown.
+2018-02-05 11:38:44.057 INFO  NServiceBus.Unicast.UnicastBus Shutdown complete.
+2018-02-05 12:40:26.561 INFO  DefaultFactory Logging to 'D:\Work Task\NewsPortal\NewsPortal\NewsPortal.Web\App_Data\' with level Info
+2018-02-05 12:40:26.711 INFO  NServiceBus.LicenseManager No valid license could be found, falling back to trial license with start date '05.02.2018'
+
+2018-02-05 12:40:26.758 INFO  NServiceBus.PerformanceMonitorUsersInstaller Did not attempt to add user 'ITRANSITION\e.raltsevich' to group 'Performance Monitor Users' since the process is not running with elevated privileges. Processing will continue. To manually perform this action, run the following command from an admin console:
+net localgroup "Performance Monitor Users" "ITRANSITION\e.raltsevich" /add
+2018-02-05 12:40:26.820 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs pulled from the input queue /sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 12:40:26.820 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 12:40:26.836 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs failures / sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 12:40:27.096 INFO  NServiceBus.Unicast.UnicastBus Initiating shutdown.
+2018-02-05 12:40:27.112 INFO  NServiceBus.Unicast.UnicastBus Shutdown complete.
+2018-02-05 12:59:35.820 INFO  DefaultFactory Logging to 'D:\Work Task\NewsPortal\NewsPortal\NewsPortal.Web\App_Data\' with level Info
+2018-02-05 12:59:36.003 INFO  NServiceBus.LicenseManager No valid license could be found, falling back to trial license with start date '05.02.2018'
+
+2018-02-05 12:59:36.060 INFO  NServiceBus.PerformanceMonitorUsersInstaller Did not attempt to add user 'ITRANSITION\e.raltsevich' to group 'Performance Monitor Users' since the process is not running with elevated privileges. Processing will continue. To manually perform this action, run the following command from an admin console:
+net localgroup "Performance Monitor Users" "ITRANSITION\e.raltsevich" /add
+2018-02-05 12:59:36.122 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs pulled from the input queue /sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 12:59:36.122 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 12:59:36.138 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs failures / sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 12:59:36.327 INFO  NServiceBus.Unicast.UnicastBus Initiating shutdown.
+2018-02-05 12:59:36.358 INFO  NServiceBus.Unicast.UnicastBus Shutdown complete.
+2018-02-05 12:59:39.355 INFO  NServiceBus.LicenseManager No valid license could be found, falling back to trial license with start date '05.02.2018'
+
+2018-02-05 12:59:39.360 INFO  NServiceBus.PerformanceMonitorUsersInstaller Did not attempt to add user 'ITRANSITION\e.raltsevich' to group 'Performance Monitor Users' since the process is not running with elevated privileges. Processing will continue. To manually perform this action, run the following command from an admin console:
+net localgroup "Performance Monitor Users" "ITRANSITION\e.raltsevich" /add
+2018-02-05 12:59:39.370 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs pulled from the input queue /sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 12:59:39.374 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 12:59:39.380 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs failures / sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 12:59:39.408 INFO  NServiceBus.Unicast.UnicastBus Initiating shutdown.
+2018-02-05 12:59:39.451 INFO  NServiceBus.Unicast.UnicastBus Shutdown complete.
+2018-02-05 12:59:42.267 INFO  NServiceBus.LicenseManager No valid license could be found, falling back to trial license with start date '05.02.2018'
+
+2018-02-05 12:59:42.267 INFO  NServiceBus.PerformanceMonitorUsersInstaller Did not attempt to add user 'ITRANSITION\e.raltsevich' to group 'Performance Monitor Users' since the process is not running with elevated privileges. Processing will continue. To manually perform this action, run the following command from an admin console:
+net localgroup "Performance Monitor Users" "ITRANSITION\e.raltsevich" /add
+2018-02-05 12:59:42.283 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs pulled from the input queue /sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 12:59:42.283 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 12:59:42.283 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs failures / sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-05 12:59:42.299 INFO  NServiceBus.Unicast.UnicastBus Initiating shutdown.
+2018-02-05 12:59:42.299 INFO  NServiceBus.Unicast.UnicastBus Shutdown complete.

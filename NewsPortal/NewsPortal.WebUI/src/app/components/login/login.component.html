@@ -1,0 +1,33 @@
+﻿<div class="container text-center">
+    <form class="form-signin" role="form">
+        <h2 class="form-signin-heading text-center">Please sign in</h2>
+
+        <input type="text" name="email" [(ngModel)]="user.Email"
+               [ngModelOptions]="{standalone: true}"
+               #email="ngModel" required email
+               class="form-control" placeholder="Email address">
+
+        <input type="password" name="password" [(ngModel)]="user.Password"
+               [ngModelOptions]="{standalone: true}"
+               #password="ngModel" required pattern=".{8,}"
+               class="form-control" placeholder="Password">
+
+        <ul>
+            <li [hidden]="email.valid || email.untouched">Invalid email</li>
+            <li [hidden]="password.valid || password.untouched">Invalid password</li>
+        </ul>
+
+        <ul *ngFor="let errors of error">
+            <li *ngFor="let item of errors.ErrorsMessage">{{item}}</li>
+        </ul>
+
+        <div *ngIf="startLogin" class="text-center">
+            <div>Loading...</div>
+        </div>
+
+        <button [disabled]="email.invalid || password.invalid || email.untouched || password.untouched"
+                class="btn btn-lg btn-primary btn-block" (click)="submit(user)">
+            Sign in
+        </button>
+    </form>
+</div> 

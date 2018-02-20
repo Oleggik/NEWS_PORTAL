@@ -1,0 +1,39 @@
+﻿.form-registr {
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+    .form-registr .form-registr-heading, .form-registr .checkbox {
+        margin-bottom: 10px;
+    }
+
+    .form-registr .checkbox {
+        font-weight: normal;
+    }
+
+    .form-registr .form-control {
+        position: relative;
+        font-size: 16px;
+        height: auto;
+        padding: 10px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+        .form-registr .form-control:focus {
+            z-index: 2;
+        }
+
+    .form-registr input[type="text"] {
+        margin-bottom: 0px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .form-registr input[type="password"] {
+        margin-bottom: 0px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }

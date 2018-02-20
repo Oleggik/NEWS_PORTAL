@@ -1,0 +1,30 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="text-center">Manage news</h2>
+            </div>
+
+            <ej-grid #grid
+                     [dataSource]='data'
+                     allowPaging='true' [pageSettings]='pageOptions'
+                     [allowFiltering]='true' [filterSettings]='filterSettings'
+                     allowSorting="true" textAlign="left">
+                <e-columns>
+                    <e-column field='Title' headerText='Title' textAlign="center"></e-column>
+                    <e-column field='UserName' headerText='User' textAlign="center"></e-column>
+                    <e-column field='CategoryName' headerText='Category' [filter]='filterNews' textAlign="left"></e-column>
+                    <e-column field='CreatedDate' headerText='Create date' format="yMd" textAlign="center"></e-column>
+                    <e-column field='Published' headerText='Published' displayAsCheckBox="true" [allowFiltering]="false" textAlign="center"></e-column>
+                    <e-column [commands]='view' width="80"></e-column>
+                    <e-column [commands]='edit' width="80"></e-column>
+                    <e-column [commands]='delete' width="80"></e-column>
+                </e-columns>
+            </ej-grid>
+
+            <div class="col-lg-offset-6">
+                <a style="margin-top: 20px;" class="btn btn-success btn-block" routerLink="/adminpanel/create/news">Create new news</a>
+            </div>
+        </div>
+    </div>
+</div>

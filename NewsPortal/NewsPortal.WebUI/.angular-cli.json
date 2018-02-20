@@ -1,0 +1,68 @@
+﻿{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "app"
+  },
+  "apps": [
+    {
+        "addons": [
+        "../node_modules/font-awesome/fonts/*.+(otf|eot|svg|ttf|woff|woff2)"
+      ],
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      },
+      "environmentSource": "environments/environment.ts",
+      "index": "index.html",
+      "main": "main.ts",
+      "outDir": "../NewsPortal.Web/app",
+      "polyfills": "polyfills.ts",
+      "prefix": "app",
+      "root": "src",
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/froala-editor/js/froala_editor.pkgd.min.js"
+      ],
+      "styles": [
+        "styles.css",
+        "../node_modules/jqwidgets-scripts/jqwidgets/styles/jqx.base.css",
+        "../node_modules/font-awesome/css/font-awesome.css",
+        "../node_modules/froala-editor/css/froala_editor.pkgd.min.css",
+        "../node_modules/@syncfusion/ej2-grids/styles/material.css"
+      ],
+      "test": "test.ts",
+      "testTsconfig": "tsconfig.spec.json",
+      "tsconfig": "tsconfig.app.json"
+    
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "src/tsconfig.app.json"
+    },
+    {
+      "project": "src/tsconfig.spec.json"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}

@@ -1,0 +1,106 @@
+﻿<div class="container text-center col-lg-12">
+
+    <div *ngIf="!componentModel.toggleAddCategory">
+
+        <h2 class="text-center">Create new news</h2>
+
+        <div class="row" style="margin-top: 20px;">
+            <div class="container">
+                <!-- input title -->
+                <div class="col-lg-4">
+                    <input #inputTitle="ngModel" class="form-control" type="text" name="Title"
+                           [(ngModel)]="componentModel.createdNews.Title"
+                           placeholder="News title"
+                           (ngModelChange)="componentModel.validateNews.validateTitle(componentModel.createdNews.Title)">
+
+                    <ul *ngFor="let errors of componentModel.validateNews.errors.errorsForTitle">
+                        <li *ngFor="let item of errors.ErrorsMessage">{{item}}</li>
+                    </ul>
+                </div>
+
+                <!-- input date -->
+                <div class="col-lg-4">
+                    <form #myForm="ngForm">
+                        <my-date-picker name="CreatedDate"
+                                        placeholder="Choose date"
+                                        [options]="myDatePickerOptions"
+                                        [(ngModel)]="componentModel.createdNews.CreatedDate">
+                        </my-date-picker>
+
+                        <ul *ngFor="let errors of componentModel.validateNews.errors.errorsForDate">
+                            <li *ngFor="let item of errors.ErrorsMessage">{{item}}</li>
+                        </ul>
+                    </form>
+                </div>
+
+                <!-- input category -->
+                <div class="col-lg-3">
+                    <ng-select style="position: relative; z-index: 1000;"
+                               [items]="componentModel.categories"
+                               [multiple]="false"
+                               [clearable]="false"
+                               bindLabel="Name"
+                               bindValue="Id"
+                               placeholder="Select Category"
+                               [(ngModel)]="componentModel.createdNews.CategoryId">
+                    </ng-select>
+
+                    <ul *ngFor="let errors of componentModel.validateNews.errors.errorsForCategory">
+                        <li *ngFor="let item of errors.ErrorsMessage">{{item}}</li>
+                    </ul>
+                </div>
+
+                <ui-switch class="col-lg-1" [(ngModel)]="componentModel.createdNews.Published"></ui-switch>
+            </div>
+        </div>
+
+        <!-- input description -->
+        <div style="margin-top: 20px;">
+            <input #inputTitle="ngModel" class="form-control" type="text" name="Description"
+                   [(ngModel)]="componentModel.createdNews.Description"
+                   placeholder="News description"
+                   (ngModelChange)="componentModel.validateNews.validateDescription(componentModel.createdNews.Description)">
+
+            <ul *ngFor="let errors of componentModel.validateNews.errors.errorsForDescription">
+                <li *ngFor="let item of errors.ErrorsMessage">{{item}}</li>
+            </ul>
+        </div>
+
+        <!-- input body -->
+        <div>
+            <div style="min-width: 100%; min-height: 70%">
+                <div type="text" name="Body" style="margin-top: 20px;"
+                     [froalaEditor]="optionsFroalaEditor"
+                     [(froalaModel)]="componentModel.createdNews.Body">
+                </div>
+            </div>
+
+            <ul *ngFor="let errors of componentModel.validateNews.errors.errorsForBody">
+                <li *ngFor="let item of errors.ErrorsMessage">{{item}}</li>
+            </ul>
+        </div>
+
+        <!-- global model error -->
+        <div style="margin-top: 20px;">
+            <ul *ngFor="let errors of componentModel.validateNews.errors.errorCreatedNews">
+                <li *ngFor="let item of errors.ErrorsMessage">{{item}}</li>
+            </ul>
+        </div>
+
+        <div style="margin-top: 20px;" *ngIf="componentModel.creatingItem">Loading...</div>
+
+        <div class="row" style="margin-top: 20px;">
+            <div class="container">
+                <div class="col-lg-6">
+                    <button style="margin-top: 20px;" class="btn btn-primary btn-block"
+                            (click)="createNews(componentModel.createdNews)">
+                        Create
+                    </button>
+                </div>
+                <div class="col-lg-6">
+                    <a style="margin-top: 20px;" class="btn btn-success btn-block" routerLink="/adminpanel/create/category">Create new category</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

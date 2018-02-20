@@ -1,0 +1,25 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="text-center">Manage categories</h2>
+            </div>
+
+            <ej-grid #gridCategoty
+                     [dataSource]='dataCategory'
+                     allowPaging='true' [pageSettings]='pageCategoryOptions'
+                     [allowFiltering]='true' [filterSettings]='filterSettings'
+                     allowSorting="true" textAlign="left">
+                <e-columns>
+                    <e-column field='Name' headerText='Name' [filter]='filter' textAlign="left"></e-column>
+                    <e-column field='Active' headerText='Active' displayAsCheckBox="true" [allowFiltering]="false" textAlign="center"></e-column>
+                    <e-column headerText='Actions' [commands]='commands'></e-column>
+                </e-columns>
+            </ej-grid>
+            
+            <div class="col-lg-offset-6">
+                <a style="margin-top: 20px;" class="btn btn-success btn-block" routerLink="/adminpanel/create/category">Create new category</a>
+            </div>
+        </div>
+    </div>
+</div>

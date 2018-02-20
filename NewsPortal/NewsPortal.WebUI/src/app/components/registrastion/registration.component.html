@@ -1,0 +1,48 @@
+﻿<div class="container text-center">
+    <form class="form-registr" role="form">
+        <h2 class="form-registr-heading text-center">Registration user</h2>
+
+        <input type="text" name="name" [(ngModel)]="user.Name"
+               [ngModelOptions]="{standalone: true}"
+               #name="ngModel" required pattern="[a-zA-Zа-яА-Я]+"
+               class="form-control" placeholder="Name">
+
+        <input type="text" name="address" [(ngModel)]="user.Address"
+               [ngModelOptions]="{standalone: true}"
+               #address="ngModel" required
+               class="form-control" placeholder="Address">
+
+        <input type="text" name="email" [(ngModel)]="user.Email"
+               [ngModelOptions]="{standalone: true}"
+               #email="ngModel" required email
+               class="form-control" placeholder="Email address">
+
+        <input type="password" name="password" [(ngModel)]="user.Password"
+               [ngModelOptions]="{standalone: true}"
+               #password="ngModel" required pattern=".{8,}"
+               class="form-control" placeholder="Password">
+
+        <ul>
+            <li [hidden]="name.valid || name.untouched">Invalid name</li>
+            <li [hidden]="address.valid || address.untouched">Invalid Address</li>
+            <li [hidden]="email.valid || email.untouched">Invalid email</li>
+            <li [hidden]="password.valid || password.untouched">Invalid password</li>
+        </ul>
+
+        <div>
+            <div>{{error}}</div>
+        </div>
+
+        <div *ngIf="startRegistration" class="text-center">
+            <div>Loading...</div>
+        </div>
+
+        <button [disabled]="
+                    name.invalid || email.invalid || address.invalid || password.invalid
+                    || name.untouched || email.untouched || address.untouched || password.untouched"
+                class="btn btn-lg btn-primary btn-block"
+                (click)="submit(user)">
+            Registration
+        </button>
+    </form>
+</div> 
