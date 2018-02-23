@@ -1,0 +1,10 @@
+﻿2018-02-23 17:20:05.389 INFO  DefaultFactory Logging to 'C:\Users\Oleg\Desktop\NewsPortal-develop\NEWS_PORTAL\NewsPortal\NewsPortal.Web\App_Data\' with level Info
+2018-02-23 17:20:05.561 INFO  NServiceBus.LicenseManager No valid license could be found, falling back to trial license with start date '23.02.2018'
+
+2018-02-23 17:20:05.608 INFO  NServiceBus.PerformanceMonitorUsersInstaller Did not attempt to add user 'XELIO\Oleg' to group 'Пользователи системного монитора' since the process is not running with elevated privileges. Processing will continue. To manually perform this action, run the following command from an admin console:
+net localgroup "Пользователи системного монитора" "XELIO\Oleg" /add
+2018-02-23 17:20:05.931 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs pulled from the input queue /sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-23 17:20:05.942 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-23 17:20:05.953 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs failures / sec' is not set up correctly. To rectify this problem, consult the NServiceBus performance counters documentation.
+2018-02-23 17:20:06.229 INFO  NServiceBus.Unicast.UnicastBus Initiating shutdown.
+2018-02-23 17:20:06.258 INFO  NServiceBus.Unicast.UnicastBus Shutdown complete.
