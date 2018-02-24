@@ -2,12 +2,15 @@
     <form class="form-registr" role="form">
         <h2 class="form-registr-heading text-center">Registration user</h2>
 
+<<<<<<< HEAD
         <style>
             li {
                 color: red;
                }
         </style>
 
+=======
+>>>>>>> parent of 32893ee... changed roles for users
         <input type="text" name="name" [(ngModel)]="user.Name"
                [ngModelOptions]="{standalone: true}"
                #name="ngModel" required pattern="[a-zA-Zа-яА-Я]+"
@@ -29,7 +32,7 @@
                class="form-control" placeholder="Password">
 
         <ul>
-            <li [hidden]="name.valid || name.untouched">Invalid </li>
+            <li [hidden]="name.valid || name.untouched">Invalid name</li>
             <li [hidden]="address.valid || address.untouched">Invalid Address</li>
             <li [hidden]="email.valid || email.untouched">Invalid email</li>
             <li [hidden]="password.valid || password.untouched">Invalid password</li>

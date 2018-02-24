@@ -73,7 +73,7 @@ namespace NewsPortal.Web.Controllers
             if (ModelState.IsValid)
             {
                 UserDto userDto = _mapper.Map<RegisterModel, UserDto>(model);
-                userDto.Role = "admin";
+                userDto.Role = "user";
                 OperationDetails operationDetails = await _userService.Create(userDto);
                 if (operationDetails.Succedeed)
                 {
